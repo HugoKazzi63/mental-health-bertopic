@@ -35,20 +35,24 @@ data/
 ├── raw/                     
 
 notebooks/
-├── 01_descriptif/
+├── 
+01_descriptif/
 │   └── Analyse descriptive E2.ipynb
 │
-├── 02_pretraitement/
+├── 
+02_pretraitement/
 │   ├── Prétraitement E2.ipynb
 │   ├── Prétraitement E3.ipynb
 │   └── Prétraitement E4.ipynb
 │
-├── 03_bertopic/
+├── 
+03_bertopic/
 │   ├── BERTopic E2.ipynb
 │   ├── BERTopic E3.ipynb
 │   └── BERTopic E4.ipynb
 │
-└── 04_visualisation/
+└── 
+04_visualisation/
 └── Wordcloud.E2.ipynb
 
 README.md
