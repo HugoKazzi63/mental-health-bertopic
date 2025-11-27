@@ -4,7 +4,7 @@ env/
 *.egg-info/
 __pycache__/
 
-# Données (à NE PAS versionner)
+# Données
 data/raw/
 data/processed/
 *.csv
