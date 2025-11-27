@@ -1,0 +1,18 @@
+# Environnements
+.venv/
+env/
+*.egg-info/
+__pycache__/
+
+# Données (à NE PAS versionner)
+data/raw/
+data/processed/
+*.csv
+*.xlsx
+
+# Notebooks temporaires
+.ipynb_checkpoints/
+
+# OS / éditeur
+.DS_Store
+*.swp

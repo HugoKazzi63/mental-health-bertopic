@@ -1,0 +1,13 @@
+pandas>=2.0
+numpy>=1.23
+scikit-learn>=1.2
+matplotlib>=3.7
+seaborn>=0.12
+wordcloud>=1.9
+umap-learn>=0.5.3
+hdbscan>=0.8.33
+bertopic>=0.16.0
+sentence-transformers>=2.2.2
+spacy>=3.7.0
+fr-core-news-md @ https://github.com/explosion/spacy-models/releases/download/fr_core_news_md-3.7.0/fr_core_news_md-3.7.0.tar.gz
+openpyxl>=3.1.2
