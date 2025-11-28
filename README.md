@@ -120,7 +120,7 @@ et de la cohérence des topics générés par BERTopic.
 
 Ce notebook repose sur plusieurs mesures complémentaires :
 
-#### Cohérence thématique (C_v)
+#### Cohérence thématique $C_v$
 Mesure la similarité sémantique entre les mots-clés de chaque topic.  
 Elle évalue si les mots d’un même thème apparaissent souvent ensemble dans les documents.  
 Utilisée principalement pour comparer différentes versions de BERTopic ou différents paramètres UMAP/HDBSCAN.
