@@ -164,6 +164,11 @@ Limites méthodologiques
 	•	BERTopic est sensible aux paramètres UMAP/HDBSCAN.
 	•	La lemmatisation française reste imparfaite.
 	•	La validation clinique est indispensable pour interpréter les topics.
+	•	Les métriques de performance (cohérence C_v, silhouette, Davies–Bouldin)
+	  	ont été calculées pour comparer quelques configurations de BERTopic, mais
+	  	**aucune optimisation exhaustive** de ces indices n’a été menée faute de temps.
+	  	Les résultats sont donc à lire comme une évaluation exploratoire, complétée
+	  	par une validation clinique des topics.
 
 
 
