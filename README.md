@@ -112,9 +112,49 @@ Chacun applique un pipeline complet :
 
 Les wordclouds sont descriptifs et ne remplacent pas la modélisation thématique.
 
+## 5. Évaluation des modèles thématiques
+
+### 05_evaluation/
+Le dossier `05_evaluation/` contient un notebook dédié à l’analyse de la qualité
+et de la cohérence des topics générés par BERTopic.
+
+Ce notebook repose sur plusieurs mesures complémentaires :
+
+#### Cohérence thématique (C_v)
+Mesure la similarité sémantique entre les mots-clés de chaque topic.  
+Elle évalue si les mots d’un même thème apparaissent souvent ensemble dans les documents.  
+Utilisée principalement pour comparer différentes versions de BERTopic ou différents paramètres UMAP/HDBSCAN.
+
+#### Silhouette Score
+Indice basé sur les embeddings réduits (UMAP) permettant d’évaluer :
+- la compacité des clusters,
+- la séparation entre groupes.
+
+Un score proche de **1** indique des clusters bien séparés ;  
+un score proche de **0** indique un chevauchement important.
+
+#### Indice de Davies–Bouldin
+Mesure la compacité intra-cluster et la séparation inter-cluster.  
+Plus la valeur est **faible**, meilleure est la partition.
 
 
-## ⛓ Installation de l’environnement
+### Objectif de cette évaluation
+
+Ces métriques ont été utilisées **de manière exploratoire**, notamment pour :
+
+- comparer rapidement différentes configurations du pipeline BERTopic,
+- identifier des topics peu stables ou peu cohérents,
+- guider un affinement manuel,
+- soutenir l’interprétation clinique.
+
+Elles ne constituent pas une “validation quantitative” définitive du modèle :
+l’interprétation des thèmes reste **essentiellement clinique**, conformément au champ de la santé mentale.
+
+Les résultats obtenus sont présentés dans le notebook `evaluation_topic_modeling.ipynb`.
+
+
+
+## Installation de l’environnement
 
 Créer un environnement Python :
 
